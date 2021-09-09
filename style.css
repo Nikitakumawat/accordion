@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+    margin: 0;
+}
+:root{
+    --orange:rgb(250, 137, 44);
+    --black:#000;
+}
+h1{
+    text-align: center;
+    font-family: 'Noto',sans-serif;
+    margin: 20px 0 0 0;
+    
+}
+.container{
+    position: absolute;
+    left: 26vw;
+    top: 15vh;
+
+}
+.accordion {
+    background-color:var(--black);
+    color: var(--orange);
+    cursor: pointer;
+    padding: 18px;
+    width: 50vw;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Noto',sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+  .active, .accordion:hover {
+    background-color:rgb(247, 173, 112);
+    color: var(--black);
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: 'Noto',sans-serif;
+    width: 45vw;
+    font-size: 15px;
+  }
+  .accordion:after {
+    content: '+'; 
+    font-size: 30px;
+    color: var(--orange);
+    float: right;
+    margin-left: 5px;
+    font-family: 'Noto',sans-serif;
+    
+  }
+  .accordion:after:hover {
+      color:var(--black);
+  }
+  .active:after {
+    content: "-"; 
+    font-family: 'Noto',sans-serif;
+    color: var(--black);
+    font-size: 30px;
+  }
+  .active:after:hover{
+      color:var(--black);
+  }
